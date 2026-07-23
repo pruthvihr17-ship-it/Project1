@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First GitHub Project</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            text-align: center;
+            margin-top: 80px;
+        }
+
+        .card {
+            width: 350px;
+            margin: auto;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+
+        h1 {
+            color: #0077cc;
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            background: #0077cc;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #005fa3;
+        }
+
+        #message {
+            margin-top: 20px;
+            font-weight: bold;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <h1>Hello GitHub!</h1>
+
+    <p>My name is Your Name.</p>
+
+    <p>I am learning HTML, CSS, JavaScript, Git, and GitHub.</p>
+
+    <button onclick="showMessage()">
+        Click Me
+    </button>
+
+    <p id="message"></p>
+</div>
+
+<script>
+    function showMessage() {
+        document.getElementById("message").innerHTML =
+            "🎉 Congratulations! Your first GitHub project is working.";
+    }
+</script>
+
+</body>
+</html>
